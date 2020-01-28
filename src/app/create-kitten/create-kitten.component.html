@@ -1,0 +1,15 @@
+<form [formGroup]="catForm" (ngSubmit)="onSubmit()">
+  <label>
+    Name:
+    <input type="text" formControlName="name" />
+  </label>
+  <label>
+    Age:
+    <input type="text" formControlName="age" />
+  </label>
+  <label>
+    Photo link:
+    <input type="text" formControlName="photo" />
+  </label>
+  <button type="submit">VALIDE</button>
+</form>

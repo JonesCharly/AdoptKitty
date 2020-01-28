@@ -1,0 +1,6 @@
+<h1>USER KITTY</h1>
+<div *ngFor="let kitty of userKitty">
+  <img [src]="kitty.photo" width="200px" />
+  <p>{{ kitty.name }}</p>
+  <p>{{ kitty.age }}</p>
+</div>
