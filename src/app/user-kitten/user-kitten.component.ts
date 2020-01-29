@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, NO_ERRORS_SCHEMA } from "@angular/core";
 import { DataService, listKitten } from "../data.service";
 
 @Component({
@@ -11,8 +11,9 @@ export class UserKittenComponent implements OnInit {
   userKitty: listKitten[] = [];
 
   ngOnInit() {
-    this.dataService
-      .getUserKitty()
-      .subscribe((kittyData: listKitten[]) => (this.userKitty = kittyData));
+    this.dataService.getUserKitty().subscribe((kittyData: listKitten[]) => {
+      this.userKitty = kittyData;
+      console.log(this.userKitty);
+    });
   }
 }

@@ -1,5 +1,14 @@
-<h1>Kitten Website</h1>
-<app-list-kitten></app-list-kitten>
-<app-create-kitten></app-create-kitten>
-<app-user-kitten></app-user-kitten>
-<router-outlet></router-outlet>
+<header>
+  <h1>WELCOME TO MEMES CATS</h1>
+  <p class="baseline">Find the best memes Cats to adopt</p>
+  <a class="baseline_link" href="#creation">Add your own cat</a>
+</header>
+
+<body>
+  <div class="list_container">
+    <app-list-kitten></app-list-kitten>
+    <app-user-kitten id="fav"></app-user-kitten>
+  </div>
+  <app-create-kitten id="creation"></app-create-kitten>
+  <router-outlet></router-outlet>
+</body>

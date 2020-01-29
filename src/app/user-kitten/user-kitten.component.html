@@ -1,6 +1,10 @@
-<h1>USER KITTY</h1>
-<div *ngFor="let kitty of userKitty">
-  <img [src]="kitty.photo" width="200px" />
-  <p>{{ kitty.name }}</p>
-  <p>{{ kitty.age }}</p>
+<h2>Your fav Kitty</h2>
+
+<div class="card" *ngFor="let kitty of userKitty">
+  <p class="card_name">{{ kitty.name }}</p>
+  <img [src]="kitty.photo" width="400px" />
+  <p class="card_date">{{ kitty.age }} days ago</p>
+</div>
+<div class="card_date" *ngIf="userKitty.length === 0">
+  You didn't adopt any cat
 </div>

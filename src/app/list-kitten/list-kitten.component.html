@@ -1,6 +1,7 @@
-<div *ngFor="let kitty of kittens">
-  <p>{{ kitty.name }}</p>
-  <p>{{ kitty.age }} months</p>
-  <img [src]="kitty.photo" width="200px" />
-  <button (click)="adopt(kitty)">ADOPT</button>
+<h2>Last Kitty</h2>
+<div class="card" *ngFor="let kitty of kittens">
+  <p class="card_name">{{ kitty.name }}</p>
+  <img [src]="kitty.photo" width="400px" />
+  <p class="card_date">{{ kitty.age }} days ago</p>
+  <button class="card_button" (click)="adopt(kitty)">ADOPT</button>
 </div>

@@ -1,15 +1,19 @@
-<form [formGroup]="catForm" (ngSubmit)="onSubmit()">
-  <label>
-    Name:
-    <input type="text" formControlName="name" />
-  </label>
-  <label>
-    Age:
-    <input type="text" formControlName="age" />
-  </label>
-  <label>
-    Photo link:
-    <input type="text" formControlName="photo" />
-  </label>
-  <button type="submit">VALIDE</button>
-</form>
+<div class="creation">
+  <h2>SEND US OUR OWN KITTY</h2>
+  <form [formGroup]="catForm" (ngSubmit)="onSubmit()">
+    <label>
+      Name:
+      <input type="text" formControlName="name" />
+    </label>
+    <label>
+      Age:
+      <input type="text" formControlName="age" />
+    </label>
+    <label>
+      Photo link:
+      <input type="text" formControlName="photo" />
+    </label>
+    <button type="submit">SEND YOUR SH***T</button>
+  </form>
+  <a class="baseline_link" href="#fav">Go Back Up</a>
+</div>
